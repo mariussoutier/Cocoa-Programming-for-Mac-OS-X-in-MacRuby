@@ -1,0 +1,358 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2933BDCE13E93304005C64AA /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2933BDCD13E93304005C64AA /* Cocoa.framework */; };
+		2933BDD013E93304005C64AA /* MacRuby.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2933BDCF13E93304005C64AA /* MacRuby.framework */; };
+		2933BDD713E93304005C64AA /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2933BDD513E93304005C64AA /* InfoPlist.strings */; };
+		2933BDDA13E93304005C64AA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2933BDD913E93304005C64AA /* main.m */; };
+		2933BDDD13E93304005C64AA /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2933BDDB13E93304005C64AA /* MainMenu.xib */; };
+		2933BDE013E93304005C64AA /* rb_main.rb in Resources */ = {isa = PBXBuildFile; fileRef = 2933BDDF13E93304005C64AA /* rb_main.rb */; };
+		2933BDE213E93304005C64AA /* MyDocument.rb in Resources */ = {isa = PBXBuildFile; fileRef = 2933BDE113E93304005C64AA /* MyDocument.rb */; };
+		2933BDE513E93304005C64AA /* MyDocument.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2933BDE313E93304005C64AA /* MyDocument.xib */; };
+		2933BDE813E93304005C64AA /* MyDocument.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2933BDE613E93304005C64AA /* MyDocument.xcdatamodeld */; };
+		2975A3FC13EDC51A00C0D320 /* Person.rb in Resources */ = {isa = PBXBuildFile; fileRef = 2975A3FB13EDC51900C0D320 /* Person.rb */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		2933BDC913E93304005C64AA /* RaiseMan.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RaiseMan.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2933BDCD13E93304005C64AA /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		2933BDCF13E93304005C64AA /* MacRuby.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MacRuby.framework; path = System/Library/Frameworks/MacRuby.framework; sourceTree = SDKROOT; };
+		2933BDD413E93304005C64AA /* RaiseMan-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "RaiseMan-Info.plist"; sourceTree = "<group>"; };
+		2933BDD613E93304005C64AA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		2933BDD813E93304005C64AA /* RaiseMan-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RaiseMan-Prefix.pch"; sourceTree = "<group>"; };
+		2933BDD913E93304005C64AA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		2933BDDC13E93304005C64AA /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		2933BDDF13E93304005C64AA /* rb_main.rb */ = {isa = PBXFileReference; lastKnownFileType = text.script.ruby; path = rb_main.rb; sourceTree = "<group>"; };
+		2933BDE113E93304005C64AA /* MyDocument.rb */ = {isa = PBXFileReference; lastKnownFileType = text.script.ruby; path = MyDocument.rb; sourceTree = "<group>"; };
+		2933BDE413E93304005C64AA /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MyDocument.xib; sourceTree = "<group>"; };
+		2933BDE713E93304005C64AA /* MyDocument.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MyDocument.xcdatamodel; sourceTree = "<group>"; };
+		2975A3FB13EDC51900C0D320 /* Person.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; path = Person.rb; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2933BDC613E93304005C64AA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2933BDCE13E93304005C64AA /* Cocoa.framework in Frameworks */,
+				2933BDD013E93304005C64AA /* MacRuby.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2933BDBE13E93304005C64AA = {
+			isa = PBXGroup;
+			children = (
+				2933BDD213E93304005C64AA /* RaiseMan */,
+				2933BDCC13E93304005C64AA /* Frameworks */,
+				2933BDCA13E93304005C64AA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2933BDCA13E93304005C64AA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2933BDC913E93304005C64AA /* RaiseMan.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2933BDCC13E93304005C64AA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2933BDCD13E93304005C64AA /* Cocoa.framework */,
+				2933BDCF13E93304005C64AA /* MacRuby.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2933BDD213E93304005C64AA /* RaiseMan */ = {
+			isa = PBXGroup;
+			children = (
+				2975A3F913EDC50100C0D320 /* Model */,
+				2933BDDB13E93304005C64AA /* MainMenu.xib */,
+				2933BDE113E93304005C64AA /* MyDocument.rb */,
+				2933BDE313E93304005C64AA /* MyDocument.xib */,
+				2933BDE613E93304005C64AA /* MyDocument.xcdatamodeld */,
+				2933BDDE13E93304005C64AA /* Other Sources */,
+				2933BDD313E93304005C64AA /* Supporting Files */,
+			);
+			path = RaiseMan;
+			sourceTree = "<group>";
+		};
+		2933BDD313E93304005C64AA /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				2933BDD413E93304005C64AA /* RaiseMan-Info.plist */,
+				2933BDD513E93304005C64AA /* InfoPlist.strings */,
+				2933BDD813E93304005C64AA /* RaiseMan-Prefix.pch */,
+				2933BDD913E93304005C64AA /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		2933BDDE13E93304005C64AA /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				2933BDDF13E93304005C64AA /* rb_main.rb */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		2975A3F913EDC50100C0D320 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				2975A3FB13EDC51900C0D320 /* Person.rb */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXLegacyTarget section */
+		2933BDD113E93304005C64AA /* Deployment */ = {
+			isa = PBXLegacyTarget;
+			buildArgumentsString = "--compile --embed";
+			buildConfigurationList = 2933BDEE13E93304005C64AA /* Build configuration list for PBXLegacyTarget "Deployment" */;
+			buildPhases = (
+			);
+			buildToolPath = /usr/local/bin/macruby_deploy;
+			dependencies = (
+			);
+			name = Deployment;
+			passBuildSettingsInEnvironment = 1;
+			productName = Deployment;
+		};
+/* End PBXLegacyTarget section */
+
+/* Begin PBXNativeTarget section */
+		2933BDC813E93304005C64AA /* RaiseMan */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2933BDEB13E93304005C64AA /* Build configuration list for PBXNativeTarget "RaiseMan" */;
+			buildPhases = (
+				2933BDC513E93304005C64AA /* Sources */,
+				2933BDC613E93304005C64AA /* Frameworks */,
+				2933BDC713E93304005C64AA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RaiseMan;
+			productName = RaiseMan;
+			productReference = 2933BDC913E93304005C64AA /* RaiseMan.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2933BDC013E93304005C64AA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				ORGANIZATIONNAME = "STAR Healthcare Management GmbH";
+			};
+			buildConfigurationList = 2933BDC313E93304005C64AA /* Build configuration list for PBXProject "RaiseMan" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 2933BDBE13E93304005C64AA;
+			productRefGroup = 2933BDCA13E93304005C64AA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2933BDC813E93304005C64AA /* RaiseMan */,
+				2933BDD113E93304005C64AA /* Deployment */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2933BDC713E93304005C64AA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2933BDD713E93304005C64AA /* InfoPlist.strings in Resources */,
+				2933BDDD13E93304005C64AA /* MainMenu.xib in Resources */,
+				2933BDE013E93304005C64AA /* rb_main.rb in Resources */,
+				2933BDE213E93304005C64AA /* MyDocument.rb in Resources */,
+				2933BDE513E93304005C64AA /* MyDocument.xib in Resources */,
+				2975A3FC13EDC51A00C0D320 /* Person.rb in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2933BDC513E93304005C64AA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2933BDDA13E93304005C64AA /* main.m in Sources */,
+				2933BDE813E93304005C64AA /* MyDocument.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		2933BDD513E93304005C64AA /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2933BDD613E93304005C64AA /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		2933BDDB13E93304005C64AA /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2933BDDC13E93304005C64AA /* en */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+		2933BDE313E93304005C64AA /* MyDocument.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2933BDE413E93304005C64AA /* en */,
+			);
+			name = MyDocument.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2933BDE913E93304005C64AA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		2933BDEA13E93304005C64AA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		2933BDEC13E93304005C64AA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_ENABLE_OBJC_GC = required;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RaiseMan/RaiseMan-Prefix.pch";
+				INFOPLIST_FILE = "RaiseMan/RaiseMan-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		2933BDED13E93304005C64AA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_ENABLE_OBJC_GC = required;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RaiseMan/RaiseMan-Prefix.pch";
+				INFOPLIST_FILE = "RaiseMan/RaiseMan-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		2933BDEF13E93304005C64AA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Debug;
+		};
+		2933BDF013E93304005C64AA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2933BDC313E93304005C64AA /* Build configuration list for PBXProject "RaiseMan" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2933BDE913E93304005C64AA /* Debug */,
+				2933BDEA13E93304005C64AA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2933BDEB13E93304005C64AA /* Build configuration list for PBXNativeTarget "RaiseMan" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2933BDEC13E93304005C64AA /* Debug */,
+				2933BDED13E93304005C64AA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2933BDEE13E93304005C64AA /* Build configuration list for PBXLegacyTarget "Deployment" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2933BDEF13E93304005C64AA /* Debug */,
+				2933BDF013E93304005C64AA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		2933BDE613E93304005C64AA /* MyDocument.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				2933BDE713E93304005C64AA /* MyDocument.xcdatamodel */,
+			);
+			currentVersion = 2933BDE713E93304005C64AA /* MyDocument.xcdatamodel */;
+			path = MyDocument.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 2933BDC013E93304005C64AA /* Project object */;
+}
