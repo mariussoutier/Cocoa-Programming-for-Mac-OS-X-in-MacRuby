@@ -24,4 +24,19 @@ class Person
   def to_s
     "Person named #{@person_name} / #{@expected_raise}"
   end
+  
+  def encodeWithCoder(coder)
+    # If not inherited from NSObject: super(coder)
+    # Now we lose the advantage of dynamic typing
+    coder.encodeObject(@person_name, forKey:"person_name")
+    coder.encodeFloat(@expected_raise, forKey:"expected_raise")
+  end
+  
+  def initWithCoder(coder)
+    init
+    # Again, have to code to specific types
+    @person_name = coder.decodeObjectForKey("person_name")
+    @expected_raise = coder.decodeFloatForKey("expected_raise")
+    self
+  end
 end
