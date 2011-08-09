@@ -5,8 +5,8 @@
 #  Created by Marius Soutier on 03.08.11.
 #
 
-class MyDocument < NSPersistentDocument
-  attr_accessor :employees
+class MyDocument < NSDocument
+  attr_accessor :employees, :table_view, :employee_controller
   
   def init
   	super
@@ -24,7 +24,7 @@ class MyDocument < NSPersistentDocument
     super
   end
   
-  # Add undo to inserting and removing
+  ### Add undo to inserting and removing
   
   def insertObject(person, inEmployeesAtIndex:index)
     puts "Adding #{person} at index #{index}"
@@ -37,7 +37,10 @@ class MyDocument < NSPersistentDocument
     start_observing_person(person)
     @employees.insertObject(person, atIndex:index)
     # or: @employees << person
-    puts "Hallo"
+    
+    # Does not work, too early I guess?
+    @table_view.window.makeFirstResponder(@table_view.window)
+    @table_view.editColumn(0, row:0, withEvent:nil, select:true)
   end
   
   def removeObjectFromEmployeesAtIndex(index)
@@ -53,7 +56,7 @@ class MyDocument < NSPersistentDocument
     @employees.removeObjectAtIndex(index)
   end
   
-  # Add undo to editing
+  ### Add undo to editing
   
   def start_observing_person(person)
     person.addObserver(self, forKeyPath:"person_name", options:NSKeyValueObservingOptionOld, context:nil) # and what if person changes? only unit tests could catch it
@@ -79,5 +82,53 @@ class MyDocument < NSPersistentDocument
     undo = undoManager
     undo.prepareWithInvocationTarget(self).changeKeyPath(keyPath, ofObject:object, toValue:oldValue)
     undo.setActionName("Edit")
+  end
+  
+  def create_employee(sender)
+    # Apparently you need all this spam when you use NSArrayController from code
+    window = @table_view.window
+    editingEnded = window.makeFirstResponder(window)
+    if !editingEnded
+      puts "Unable to end editing"
+      return
+    end
+    
+    undo = undoManager
+    if undo.groupingLevel > 0
+      undo.endUndoGrouping
+      undo.beginUndoGrouping
+    end
+    
+    person = @employee_controller.newObject
+    @employee_controller.addObject(person)
+    @employee_controller.rearrangeObjects
+    row = @employee_controller.arrangedObjects.indexOfObjectIdenticalTo(person)
+    # Effectively for this call:
+    @table_view.editColumn(0, row:row, withEvent:nil, select:true)
+  end
+  
+  ### Saving, Loading
+  
+  def dataOfType(type, error:error)
+    puts "dataOfType type #{type}"
+    @table_view.window.endEditingFor(nil)
+    NSKeyedArchiver.archivedDataWithRootObject(@employees)
+  end
+  
+  def readFromData(data, ofType:typeName, error:error)
+    puts "About to read data of type #{typeName}"
+    objects = nil
+    begin
+      objects = NSKeyedUnarchiver.unarchiveObjectWithData(data)
+    rescue
+      if !error.nil?
+        dict = NSDictionary.dictionaryWithObject("Data is corrupted", forKey:NSLocalizedFailureReasonErrorKey)
+        #dict = { NSLocalizedFailureReasonErrorKey:"Data is corrupted" }
+        error = NSError.errorWithDomain(NSOSStatusErrorDomain, code:0, userInfo:dict) #unimpErr
+      end
+      return false
+    end
+    @employees = objects
+    true
   end
 end
