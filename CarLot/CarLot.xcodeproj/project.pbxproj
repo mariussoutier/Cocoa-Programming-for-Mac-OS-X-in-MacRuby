@@ -1,0 +1,344 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		292B670C13F31DE800260C85 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 292B670B13F31DE800260C85 /* Cocoa.framework */; };
+		292B670E13F31DE800260C85 /* MacRuby.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 292B670D13F31DE800260C85 /* MacRuby.framework */; };
+		292B671513F31DE800260C85 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 292B671313F31DE800260C85 /* InfoPlist.strings */; };
+		292B671813F31DE800260C85 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 292B671713F31DE800260C85 /* main.m */; };
+		292B671B13F31DE800260C85 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 292B671913F31DE800260C85 /* MainMenu.xib */; };
+		292B671E13F31DE800260C85 /* rb_main.rb in Resources */ = {isa = PBXBuildFile; fileRef = 292B671D13F31DE800260C85 /* rb_main.rb */; };
+		292B672013F31DE800260C85 /* CarLotDocument.rb in Resources */ = {isa = PBXBuildFile; fileRef = 292B671F13F31DE800260C85 /* CarLotDocument.rb */; };
+		292B672313F31DE800260C85 /* CarLotDocument.xib in Resources */ = {isa = PBXBuildFile; fileRef = 292B672113F31DE800260C85 /* CarLotDocument.xib */; };
+		292B672613F31DE800260C85 /* CarLotDocument.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 292B672413F31DE800260C85 /* CarLotDocument.xcdatamodeld */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		292B670713F31DE800260C85 /* CarLot.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CarLot.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		292B670B13F31DE800260C85 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		292B670D13F31DE800260C85 /* MacRuby.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MacRuby.framework; path = System/Library/Frameworks/MacRuby.framework; sourceTree = SDKROOT; };
+		292B671213F31DE800260C85 /* CarLot-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CarLot-Info.plist"; sourceTree = "<group>"; };
+		292B671413F31DE800260C85 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		292B671613F31DE800260C85 /* CarLot-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CarLot-Prefix.pch"; sourceTree = "<group>"; };
+		292B671713F31DE800260C85 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		292B671A13F31DE800260C85 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		292B671D13F31DE800260C85 /* rb_main.rb */ = {isa = PBXFileReference; lastKnownFileType = text.script.ruby; path = rb_main.rb; sourceTree = "<group>"; };
+		292B671F13F31DE800260C85 /* CarLotDocument.rb */ = {isa = PBXFileReference; lastKnownFileType = text.script.ruby; path = CarLotDocument.rb; sourceTree = "<group>"; };
+		292B672213F31DE800260C85 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/CarLotDocument.xib; sourceTree = "<group>"; };
+		292B672513F31DE800260C85 /* CarLotDocument.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CarLotDocument.xcdatamodel; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		292B670413F31DE800260C85 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				292B670C13F31DE800260C85 /* Cocoa.framework in Frameworks */,
+				292B670E13F31DE800260C85 /* MacRuby.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		292B66FC13F31DE800260C85 = {
+			isa = PBXGroup;
+			children = (
+				292B671013F31DE800260C85 /* CarLot */,
+				292B670A13F31DE800260C85 /* Frameworks */,
+				292B670813F31DE800260C85 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		292B670813F31DE800260C85 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				292B670713F31DE800260C85 /* CarLot.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		292B670A13F31DE800260C85 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				292B670B13F31DE800260C85 /* Cocoa.framework */,
+				292B670D13F31DE800260C85 /* MacRuby.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		292B671013F31DE800260C85 /* CarLot */ = {
+			isa = PBXGroup;
+			children = (
+				292B671913F31DE800260C85 /* MainMenu.xib */,
+				292B671F13F31DE800260C85 /* CarLotDocument.rb */,
+				292B672113F31DE800260C85 /* CarLotDocument.xib */,
+				292B672413F31DE800260C85 /* CarLotDocument.xcdatamodeld */,
+				292B671C13F31DE800260C85 /* Other Sources */,
+				292B671113F31DE800260C85 /* Supporting Files */,
+			);
+			path = CarLot;
+			sourceTree = "<group>";
+		};
+		292B671113F31DE800260C85 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				292B671213F31DE800260C85 /* CarLot-Info.plist */,
+				292B671313F31DE800260C85 /* InfoPlist.strings */,
+				292B671613F31DE800260C85 /* CarLot-Prefix.pch */,
+				292B671713F31DE800260C85 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		292B671C13F31DE800260C85 /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				292B671D13F31DE800260C85 /* rb_main.rb */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXLegacyTarget section */
+		292B670F13F31DE800260C85 /* Deployment */ = {
+			isa = PBXLegacyTarget;
+			buildArgumentsString = "--compile --embed";
+			buildConfigurationList = 292B672C13F31DE800260C85 /* Build configuration list for PBXLegacyTarget "Deployment" */;
+			buildPhases = (
+			);
+			buildToolPath = /usr/local/bin/macruby_deploy;
+			dependencies = (
+			);
+			name = Deployment;
+			passBuildSettingsInEnvironment = 1;
+			productName = Deployment;
+		};
+/* End PBXLegacyTarget section */
+
+/* Begin PBXNativeTarget section */
+		292B670613F31DE800260C85 /* CarLot */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 292B672913F31DE800260C85 /* Build configuration list for PBXNativeTarget "CarLot" */;
+			buildPhases = (
+				292B670313F31DE800260C85 /* Sources */,
+				292B670413F31DE800260C85 /* Frameworks */,
+				292B670513F31DE800260C85 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CarLot;
+			productName = CarLot;
+			productReference = 292B670713F31DE800260C85 /* CarLot.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		292B66FE13F31DE800260C85 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				ORGANIZATIONNAME = "STAR Healthcare Management GmbH";
+			};
+			buildConfigurationList = 292B670113F31DE800260C85 /* Build configuration list for PBXProject "CarLot" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 292B66FC13F31DE800260C85;
+			productRefGroup = 292B670813F31DE800260C85 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				292B670613F31DE800260C85 /* CarLot */,
+				292B670F13F31DE800260C85 /* Deployment */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		292B670513F31DE800260C85 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				292B671513F31DE800260C85 /* InfoPlist.strings in Resources */,
+				292B671B13F31DE800260C85 /* MainMenu.xib in Resources */,
+				292B671E13F31DE800260C85 /* rb_main.rb in Resources */,
+				292B672013F31DE800260C85 /* CarLotDocument.rb in Resources */,
+				292B672313F31DE800260C85 /* CarLotDocument.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		292B670313F31DE800260C85 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				292B671813F31DE800260C85 /* main.m in Sources */,
+				292B672613F31DE800260C85 /* CarLotDocument.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		292B671313F31DE800260C85 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				292B671413F31DE800260C85 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		292B671913F31DE800260C85 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				292B671A13F31DE800260C85 /* en */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+		292B672113F31DE800260C85 /* CarLotDocument.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				292B672213F31DE800260C85 /* en */,
+			);
+			name = CarLotDocument.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		292B672713F31DE800260C85 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		292B672813F31DE800260C85 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		292B672A13F31DE800260C85 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_ENABLE_OBJC_GC = required;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CarLot/CarLot-Prefix.pch";
+				INFOPLIST_FILE = "CarLot/CarLot-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		292B672B13F31DE800260C85 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_ENABLE_OBJC_GC = required;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CarLot/CarLot-Prefix.pch";
+				INFOPLIST_FILE = "CarLot/CarLot-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		292B672D13F31DE800260C85 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Debug;
+		};
+		292B672E13F31DE800260C85 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		292B670113F31DE800260C85 /* Build configuration list for PBXProject "CarLot" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				292B672713F31DE800260C85 /* Debug */,
+				292B672813F31DE800260C85 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		292B672913F31DE800260C85 /* Build configuration list for PBXNativeTarget "CarLot" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				292B672A13F31DE800260C85 /* Debug */,
+				292B672B13F31DE800260C85 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		292B672C13F31DE800260C85 /* Build configuration list for PBXLegacyTarget "Deployment" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				292B672D13F31DE800260C85 /* Debug */,
+				292B672E13F31DE800260C85 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		292B672413F31DE800260C85 /* CarLotDocument.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				292B672513F31DE800260C85 /* CarLotDocument.xcdatamodel */,
+			);
+			currentVersion = 292B672513F31DE800260C85 /* CarLotDocument.xcdatamodel */;
+			path = CarLotDocument.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 292B66FE13F31DE800260C85 /* Project object */;
+}
