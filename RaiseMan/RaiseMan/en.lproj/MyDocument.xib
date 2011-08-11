@@ -76,7 +76,7 @@
 											<string key="NSFrameSize">{448, 304}</string>
 											<reference key="NSSuperview" ref="53137982"/>
 											<reference key="NSWindow"/>
-											<reference key="NSNextKeyView" ref="467011476"/>
+											<reference key="NSNextKeyView" ref="452477657"/>
 											<bool key="NSEnabled">YES</bool>
 											<object class="NSTableHeaderView" key="NSHeaderView" id="799799061">
 												<reference key="NSNextResponder" ref="452477657"/>
@@ -328,7 +328,7 @@
 							<string key="NSFrame">{{20, 34}, {450, 322}}</string>
 							<reference key="NSSuperview" ref="568628114"/>
 							<reference key="NSWindow"/>
-							<reference key="NSNextKeyView" ref="452477657"/>
+							<reference key="NSNextKeyView" ref="53137982"/>
 							<int key="NSsFlags">562</int>
 							<reference key="NSVScroller" ref="467011476"/>
 							<reference key="NSHScroller" ref="126234396"/>
@@ -365,7 +365,6 @@
 							<string key="NSFrame">{{478, 305}, {111, 23}}</string>
 							<reference key="NSSuperview" ref="568628114"/>
 							<reference key="NSWindow"/>
-							<reference key="NSNextKeyView"/>
 							<bool key="NSEnabled">YES</bool>
 							<object class="NSButtonCell" key="NSCell" id="773478318">
 								<int key="NSCellFlags">-2080244224</int>
@@ -490,19 +489,35 @@
 				</object>
 				<object class="IBConnectionRecord">
 					<object class="IBActionConnection" key="connection">
-						<string key="label">add:</string>
-						<reference key="source" ref="483564287"/>
-						<reference key="destination" ref="468301749"/>
-					</object>
-					<int key="connectionID">100045</int>
-				</object>
-				<object class="IBConnectionRecord">
-					<object class="IBActionConnection" key="connection">
 						<string key="label">remove:</string>
 						<reference key="source" ref="483564287"/>
 						<reference key="destination" ref="756908823"/>
 					</object>
 					<int key="connectionID">100046</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBOutletConnection" key="connection">
+						<string key="label">employee_controller</string>
+						<reference key="source" ref="512844837"/>
+						<reference key="destination" ref="483564287"/>
+					</object>
+					<int key="connectionID">100048</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBOutletConnection" key="connection">
+						<string key="label">table_view</string>
+						<reference key="source" ref="512844837"/>
+						<reference key="destination" ref="750107590"/>
+					</object>
+					<int key="connectionID">100049</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBActionConnection" key="connection">
+						<string key="label">add:</string>
+						<reference key="source" ref="483564287"/>
+						<reference key="destination" ref="468301749"/>
+					</object>
+					<int key="connectionID">100050</int>
 				</object>
 			</object>
 			<object class="IBMutableOrderedSet" key="objectRecords">
@@ -744,7 +759,7 @@
 				<reference key="dict.values" ref="0"/>
 			</object>
 			<nil key="sourceID"/>
-			<int key="maxID">100046</int>
+			<int key="maxID">100050</int>
 		</object>
 		<object class="IBClassDescriber" key="IBDocument.Classes">
 			<object class="NSMutableArray" key="referencedPartialClassDescriptions">
@@ -752,15 +767,54 @@
 				<object class="IBPartialClassDescription">
 					<string key="className">MyDocument</string>
 					<string key="superclassName">NSPersistentDocument</string>
-					<object class="NSMutableDictionary" key="outlets">
-						<string key="NS.key.0">employees</string>
+					<object class="NSMutableDictionary" key="actions">
+						<string key="NS.key.0">create_employee:</string>
 						<string key="NS.object.0">id</string>
 					</object>
-					<object class="NSMutableDictionary" key="toOneOutletInfosByName">
-						<string key="NS.key.0">employees</string>
-						<object class="IBToOneOutletInfo" key="NS.object.0">
-							<string key="name">employees</string>
+					<object class="NSMutableDictionary" key="actionInfosByName">
+						<string key="NS.key.0">create_employee:</string>
+						<object class="IBActionInfo" key="NS.object.0">
+							<string key="name">create_employee:</string>
 							<string key="candidateClassName">id</string>
+						</object>
+					</object>
+					<object class="NSMutableDictionary" key="outlets">
+						<bool key="EncodedWithXMLCoder">YES</bool>
+						<object class="NSArray" key="dict.sortedKeys">
+							<bool key="EncodedWithXMLCoder">YES</bool>
+							<string>employee_controller</string>
+							<string>employees</string>
+							<string>table_view</string>
+						</object>
+						<object class="NSMutableArray" key="dict.values">
+							<bool key="EncodedWithXMLCoder">YES</bool>
+							<string>id</string>
+							<string>id</string>
+							<string>id</string>
+						</object>
+					</object>
+					<object class="NSMutableDictionary" key="toOneOutletInfosByName">
+						<bool key="EncodedWithXMLCoder">YES</bool>
+						<object class="NSArray" key="dict.sortedKeys">
+							<bool key="EncodedWithXMLCoder">YES</bool>
+							<string>employee_controller</string>
+							<string>employees</string>
+							<string>table_view</string>
+						</object>
+						<object class="NSMutableArray" key="dict.values">
+							<bool key="EncodedWithXMLCoder">YES</bool>
+							<object class="IBToOneOutletInfo">
+								<string key="name">employee_controller</string>
+								<string key="candidateClassName">id</string>
+							</object>
+							<object class="IBToOneOutletInfo">
+								<string key="name">employees</string>
+								<string key="candidateClassName">id</string>
+							</object>
+							<object class="IBToOneOutletInfo">
+								<string key="name">table_view</string>
+								<string key="candidateClassName">id</string>
+							</object>
 						</object>
 					</object>
 					<object class="IBClassDescriptionSource" key="sourceIdentifier">

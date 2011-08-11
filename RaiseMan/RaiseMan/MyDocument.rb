@@ -110,7 +110,6 @@ class MyDocument < NSDocument
   ### Saving, Loading
   
   def dataOfType(type, error:error)
-    puts "dataOfType type #{type}"
     @table_view.window.endEditingFor(nil)
     NSKeyedArchiver.archivedDataWithRootObject(@employees)
   end
@@ -124,7 +123,7 @@ class MyDocument < NSDocument
       if !error.nil?
         dict = NSDictionary.dictionaryWithObject("Data is corrupted", forKey:NSLocalizedFailureReasonErrorKey)
         #dict = { NSLocalizedFailureReasonErrorKey:"Data is corrupted" }
-        error = NSError.errorWithDomain(NSOSStatusErrorDomain, code:0, userInfo:dict) #unimpErr
+        error = NSError.errorWithDomain(NSOSStatusErrorDomain, code:-4, userInfo:dict) #unimpErr from MacErrors.h is in Carbon
       end
       return false
     end

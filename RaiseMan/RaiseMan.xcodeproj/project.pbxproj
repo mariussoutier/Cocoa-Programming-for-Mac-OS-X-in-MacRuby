@@ -15,7 +15,6 @@
 		2933BDE013E93304005C64AA /* rb_main.rb in Resources */ = {isa = PBXBuildFile; fileRef = 2933BDDF13E93304005C64AA /* rb_main.rb */; };
 		2933BDE213E93304005C64AA /* MyDocument.rb in Resources */ = {isa = PBXBuildFile; fileRef = 2933BDE113E93304005C64AA /* MyDocument.rb */; };
 		2933BDE513E93304005C64AA /* MyDocument.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2933BDE313E93304005C64AA /* MyDocument.xib */; };
-		2933BDE813E93304005C64AA /* MyDocument.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2933BDE613E93304005C64AA /* MyDocument.xcdatamodeld */; };
 		2975A3FC13EDC51A00C0D320 /* Person.rb in Resources */ = {isa = PBXBuildFile; fileRef = 2975A3FB13EDC51900C0D320 /* Person.rb */; };
 /* End PBXBuildFile section */
 
@@ -31,7 +30,6 @@
 		2933BDDF13E93304005C64AA /* rb_main.rb */ = {isa = PBXFileReference; lastKnownFileType = text.script.ruby; path = rb_main.rb; sourceTree = "<group>"; };
 		2933BDE113E93304005C64AA /* MyDocument.rb */ = {isa = PBXFileReference; lastKnownFileType = text.script.ruby; path = MyDocument.rb; sourceTree = "<group>"; };
 		2933BDE413E93304005C64AA /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MyDocument.xib; sourceTree = "<group>"; };
-		2933BDE713E93304005C64AA /* MyDocument.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MyDocument.xcdatamodel; sourceTree = "<group>"; };
 		2975A3FB13EDC51900C0D320 /* Person.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; path = Person.rb; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -81,7 +79,6 @@
 				2933BDDB13E93304005C64AA /* MainMenu.xib */,
 				2933BDE113E93304005C64AA /* MyDocument.rb */,
 				2933BDE313E93304005C64AA /* MyDocument.xib */,
-				2933BDE613E93304005C64AA /* MyDocument.xcdatamodeld */,
 				2933BDDE13E93304005C64AA /* Other Sources */,
 				2933BDD313E93304005C64AA /* Supporting Files */,
 			);
@@ -199,7 +196,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				2933BDDA13E93304005C64AA /* main.m in Sources */,
-				2933BDE813E93304005C64AA /* MyDocument.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -340,19 +336,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCVersionGroup section */
-		2933BDE613E93304005C64AA /* MyDocument.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				2933BDE713E93304005C64AA /* MyDocument.xcdatamodel */,
-			);
-			currentVersion = 2933BDE713E93304005C64AA /* MyDocument.xcdatamodel */;
-			path = MyDocument.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
 	};
 	rootObject = 2933BDC013E93304005C64AA /* Project object */;
 }

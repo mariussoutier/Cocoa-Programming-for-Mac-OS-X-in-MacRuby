@@ -25,8 +25,11 @@ class Person
     "Person named #{@person_name} / #{@expected_raise}"
   end
   
+  
+  # Does this belong in a model class?
+  
   def encodeWithCoder(coder)
-    # If not inherited from NSObject: super(coder)
+    # If not inherited from NSObject, you should call super
     # Now we lose the advantage of dynamic typing
     coder.encodeObject(@person_name, forKey:"person_name")
     coder.encodeFloat(@expected_raise, forKey:"expected_raise")
