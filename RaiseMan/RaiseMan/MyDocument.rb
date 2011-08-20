@@ -22,6 +22,8 @@ class MyDocument < NSDocument
 
   def windowControllerDidLoadNib(aController)
     super
+    color = NSUserDefaults.standardUserDefaults[:table_background_color]
+    @table_view.setBackgroundColor(NSKeyedUnarchiver.unarchiveObjectWithData(color))
   end
   
   ### Add undo to inserting and removing
