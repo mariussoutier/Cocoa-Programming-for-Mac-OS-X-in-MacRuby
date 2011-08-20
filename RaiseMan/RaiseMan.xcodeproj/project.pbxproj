@@ -16,6 +16,10 @@
 		2933BDE213E93304005C64AA /* MyDocument.rb in Resources */ = {isa = PBXBuildFile; fileRef = 2933BDE113E93304005C64AA /* MyDocument.rb */; };
 		2933BDE513E93304005C64AA /* MyDocument.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2933BDE313E93304005C64AA /* MyDocument.xib */; };
 		2975A3FC13EDC51A00C0D320 /* Person.rb in Resources */ = {isa = PBXBuildFile; fileRef = 2975A3FB13EDC51900C0D320 /* Person.rb */; };
+		29ED6409140054C100208553 /* AppController.rb in Resources */ = {isa = PBXBuildFile; fileRef = 29ED6408140054C100208553 /* AppController.rb */; };
+		29ED640C140056B800208553 /* PreferenceController.rb in Resources */ = {isa = PBXBuildFile; fileRef = 29ED640B140056B800208553 /* PreferenceController.rb */; };
+		29ED640E1400660100208553 /* Preferences.xib in Resources */ = {isa = PBXBuildFile; fileRef = 29ED640D1400660100208553 /* Preferences.xib */; };
+		29ED6410140068FE00208553 /* About.xib in Resources */ = {isa = PBXBuildFile; fileRef = 29ED640F140068FE00208553 /* About.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +35,10 @@
 		2933BDE113E93304005C64AA /* MyDocument.rb */ = {isa = PBXFileReference; lastKnownFileType = text.script.ruby; path = MyDocument.rb; sourceTree = "<group>"; };
 		2933BDE413E93304005C64AA /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MyDocument.xib; sourceTree = "<group>"; };
 		2975A3FB13EDC51900C0D320 /* Person.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; path = Person.rb; sourceTree = "<group>"; };
+		29ED6408140054C100208553 /* AppController.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; path = AppController.rb; sourceTree = "<group>"; };
+		29ED640B140056B800208553 /* PreferenceController.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; path = PreferenceController.rb; sourceTree = "<group>"; };
+		29ED640D1400660100208553 /* Preferences.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Preferences.xib; sourceTree = "<group>"; };
+		29ED640F140068FE00208553 /* About.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = About.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +89,10 @@
 				2933BDE313E93304005C64AA /* MyDocument.xib */,
 				2933BDDE13E93304005C64AA /* Other Sources */,
 				2933BDD313E93304005C64AA /* Supporting Files */,
+				29ED6408140054C100208553 /* AppController.rb */,
+				29ED640B140056B800208553 /* PreferenceController.rb */,
+				29ED640F140068FE00208553 /* About.xib */,
+				29ED640D1400660100208553 /* Preferences.xib */,
 			);
 			path = RaiseMan;
 			sourceTree = "<group>";
@@ -185,6 +197,10 @@
 				2933BDE213E93304005C64AA /* MyDocument.rb in Resources */,
 				2933BDE513E93304005C64AA /* MyDocument.xib in Resources */,
 				2975A3FC13EDC51A00C0D320 /* Person.rb in Resources */,
+				29ED6409140054C100208553 /* AppController.rb in Resources */,
+				29ED640C140056B800208553 /* PreferenceController.rb in Resources */,
+				29ED640E1400660100208553 /* Preferences.xib in Resources */,
+				29ED6410140068FE00208553 /* About.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
