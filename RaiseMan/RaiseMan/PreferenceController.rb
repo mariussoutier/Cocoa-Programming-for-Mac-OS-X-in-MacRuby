@@ -28,6 +28,7 @@ class PreferenceController < NSWindowController
   
   def change_background_color(sender)
     NSUserDefaults.standardUserDefaults[:table_background_color] = NSKeyedArchiver.archivedDataWithRootObject(@color_well.color)
+    NSNotificationCenter.defaultCenter.postNotificationName("ColorChanged", object:self, userInfo:{:color => @color_well.color})
   end
   
   def change_new_empty_doc(sender)

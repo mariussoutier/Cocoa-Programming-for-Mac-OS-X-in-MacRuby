@@ -12,6 +12,7 @@ class MyDocument < NSDocument
   	super
   	if (self != nil)
       @employees = []
+      NSNotificationCenter.defaultCenter.addObserver(self, selector:"handleColorChange:", name:"ColorChanged", object:nil)
   	end
     self
   end
@@ -131,5 +132,21 @@ class MyDocument < NSDocument
     end
     @employees = objects
     true
+  end
+  
+  def handleColorChange(notification)
+    @table_view.setBackgroundColor(notification.userInfo[:color])
+  end
+  
+  def remove_employee(sender)
+    alert = NSAlert.alertWithMessageText("Delete?", defaultButton:"Delete", alternateButton:"Cancel", otherButton:nil,
+                                     informativeTextWithFormat:"Do you really want to delete #{@employee_controller.selectedObjects.count} people?")
+    alert.beginSheetModalForWindow(@table_view.window, modalDelegate:self, didEndSelector:"alertEnded:code:context:", contextInfo:nil)
+  end
+  
+  def alertEnded(alert, code:choice, context:v)
+    if choice == NSAlertDefaultReturn
+      @employee_controller.remove:nil?
+    end
   end
 end
