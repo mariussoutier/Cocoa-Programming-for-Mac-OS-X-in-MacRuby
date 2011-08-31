@@ -1,0 +1,2 @@
+"Delete?" = "Really Delete?";
+"Do you really want to delete %d people?" = "Do you really want to delete %@ people?"; /* %d does not work in MacRuby because everything's an object */
