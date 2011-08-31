@@ -118,7 +118,6 @@ class MyDocument < NSDocument
   end
   
   def readFromData(data, ofType:typeName, error:error)
-    puts "About to read data of type #{typeName}"
     objects = nil
     begin
       objects = NSKeyedUnarchiver.unarchiveObjectWithData(data)
@@ -139,8 +138,8 @@ class MyDocument < NSDocument
   end
   
   def remove_employee(sender)
-    alert = NSAlert.alertWithMessageText("Delete?", defaultButton:"Delete", alternateButton:"Cancel", otherButton:nil,
-                                     informativeTextWithFormat:"Do you really want to delete #{@employee_controller.selectedObjects.count} people?")
+    alert = NSAlert.alertWithMessageText(localized("Delete?"), defaultButton:localized("Delete"), alternateButton:localized("Cancel"), otherButton:nil,
+                                     informativeTextWithFormat:localized_format("Do you really want to delete %d people?", @employee_controller.selectedObjects.count))
     alert.beginSheetModalForWindow(@table_view.window, modalDelegate:self, didEndSelector:"alertEnded:code:context:", contextInfo:nil)
   end
   
