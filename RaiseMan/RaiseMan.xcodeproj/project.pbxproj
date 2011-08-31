@@ -16,6 +16,9 @@
 		2933BDE213E93304005C64AA /* MyDocument.rb in Resources */ = {isa = PBXBuildFile; fileRef = 2933BDE113E93304005C64AA /* MyDocument.rb */; };
 		2933BDE513E93304005C64AA /* MyDocument.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2933BDE313E93304005C64AA /* MyDocument.xib */; };
 		2975A3FC13EDC51A00C0D320 /* Person.rb in Resources */ = {isa = PBXBuildFile; fileRef = 2975A3FB13EDC51900C0D320 /* Person.rb */; };
+		2976CA12140D6E9E0008A5FD /* Ext.rb in Resources */ = {isa = PBXBuildFile; fileRef = 2976CA11140D6E9E0008A5FD /* Ext.rb */; };
+		2976CA15140D7C290008A5FD /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2976CA13140D7C290008A5FD /* Localizable.strings */; };
+		2976CA17140D7C410008A5FD /* About.xib in Resources */ = {isa = PBXBuildFile; fileRef = 29ED640F140068FE00208553 /* About.xib */; };
 		29ED6409140054C100208553 /* AppController.rb in Resources */ = {isa = PBXBuildFile; fileRef = 29ED6408140054C100208553 /* AppController.rb */; };
 		29ED640C140056B800208553 /* PreferenceController.rb in Resources */ = {isa = PBXBuildFile; fileRef = 29ED640B140056B800208553 /* PreferenceController.rb */; };
 		29ED640E1400660100208553 /* Preferences.xib in Resources */ = {isa = PBXBuildFile; fileRef = 29ED640D1400660100208553 /* Preferences.xib */; };
@@ -35,6 +38,10 @@
 		2933BDE113E93304005C64AA /* MyDocument.rb */ = {isa = PBXFileReference; lastKnownFileType = text.script.ruby; path = MyDocument.rb; sourceTree = "<group>"; };
 		2933BDE413E93304005C64AA /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MyDocument.xib; sourceTree = "<group>"; };
 		2975A3FB13EDC51900C0D320 /* Person.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; path = Person.rb; sourceTree = "<group>"; };
+		2976CA10140D6D710008A5FD /* de */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = de; path = de.lproj/MyDocument.xib; sourceTree = "<group>"; };
+		2976CA11140D6E9E0008A5FD /* Ext.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; path = Ext.rb; sourceTree = "<group>"; };
+		2976CA14140D7C290008A5FD /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		2976CA16140D7C410008A5FD /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Localizable.strings; sourceTree = "<group>"; };
 		29ED6408140054C100208553 /* AppController.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; path = AppController.rb; sourceTree = "<group>"; };
 		29ED640B140056B800208553 /* PreferenceController.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; path = PreferenceController.rb; sourceTree = "<group>"; };
 		29ED640D1400660100208553 /* Preferences.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Preferences.xib; sourceTree = "<group>"; };
@@ -91,8 +98,10 @@
 				2933BDD313E93304005C64AA /* Supporting Files */,
 				29ED6408140054C100208553 /* AppController.rb */,
 				29ED640B140056B800208553 /* PreferenceController.rb */,
+				2976CA13140D7C290008A5FD /* Localizable.strings */,
 				29ED640F140068FE00208553 /* About.xib */,
 				29ED640D1400660100208553 /* Preferences.xib */,
+				2976CA11140D6E9E0008A5FD /* Ext.rb */,
 			);
 			path = RaiseMan;
 			sourceTree = "<group>";
@@ -174,6 +183,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				de,
 			);
 			mainGroup = 2933BDBE13E93304005C64AA;
 			productRefGroup = 2933BDCA13E93304005C64AA /* Products */;
@@ -201,6 +211,9 @@
 				29ED640C140056B800208553 /* PreferenceController.rb in Resources */,
 				29ED640E1400660100208553 /* Preferences.xib in Resources */,
 				29ED6410140068FE00208553 /* About.xib in Resources */,
+				2976CA12140D6E9E0008A5FD /* Ext.rb in Resources */,
+				2976CA15140D7C290008A5FD /* Localizable.strings in Resources */,
+				2976CA17140D7C410008A5FD /* About.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -238,8 +251,18 @@
 			isa = PBXVariantGroup;
 			children = (
 				2933BDE413E93304005C64AA /* en */,
+				2976CA10140D6D710008A5FD /* de */,
 			);
 			name = MyDocument.xib;
+			sourceTree = "<group>";
+		};
+		2976CA13140D7C290008A5FD /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2976CA14140D7C290008A5FD /* en */,
+				2976CA16140D7C410008A5FD /* de */,
+			);
+			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
